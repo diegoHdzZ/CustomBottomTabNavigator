@@ -1,6 +1,14 @@
 # CustomBottomTabNavigator
 This is a modification to the repo 10clouds/FluidBottomNavigation-rn
 
+to run the example  
+```
+npm install 
+```
+```
+react-native react-native link react-native-view-overflow
+```
+
 This is a working version with react-navigation v5 
 
 It is modified to work with initalRouteName, triggering the animation when the app starts
