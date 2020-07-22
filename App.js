@@ -4,7 +4,6 @@ import {Text, View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import TabBar from './components/TabBar';
-
 const Tab = createMaterialTopTabNavigator();
 
 function MyTabBar({state, descriptors, navigation, position}) {
@@ -25,14 +24,14 @@ function MyTabBar({state, descriptors, navigation, position}) {
   return (
     <TabBar
       onPress={handleOnPress}
-      tintColor="red"
+      // tintColor="red"
       activeTab={state.index}
       values={[
-        {title: 'News', icon: require('./assets/news.png')},
-        {title: 'Requests', icon: require('./assets/requests.png')},
-        {title: 'Events', icon: require('./assets/events.png')},
-        {title: 'Members', icon: require('./assets/members.png')},
-        {title: 'Account', icon: require('./assets/account.png')},
+        {title: 'News', icon: 'instagram'},
+        {title: 'Requests', icon: 'inbox'},
+        {title: 'Events', icon: 'calendar'},
+        {title: 'Members', icon: 'user'},
+        {title: 'Account', icon: 'setting'},
       ]}
     />
   );

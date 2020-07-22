@@ -9,8 +9,13 @@ import {
 } from "react-native";
 import PropTypes from "prop-types";
 import ViewOverflow from "react-native-view-overflow";
+/**TODO: Change to whichever Icons u want to use  eg  
+ *   import Icon from 'react-native-vector-icons/Entypo' 
+ */
+ import Icon from 'react-native-vector-icons/AntDesign' 
 
 const AnimatedViewOverflow = Animated.createAnimatedComponent(ViewOverflow);
+const AnimatedIcon= Animated.createAnimatedComponent(Icon);
 
 class TabBar extends Component {
   constructor(props) {
@@ -80,7 +85,7 @@ class TabBar extends Component {
       };
 
       const animatedImageStyle = {
-        tintColor: animatedColorValues
+        color: animatedColorValues
       };
 
       const animatedMiniBubbleTranslateValues = this.animatedMiniBubbleValues[
@@ -151,7 +156,9 @@ class TabBar extends Component {
                 animatedMiniBubbleStyle
               ]}
             />
-            <Animated.Image source={item.icon} style={animatedImageStyle} />
+            {/*TODO: Here dsiaplays the image, added width:20,height:20 so any image can be displayed*/}
+            <AnimatedIcon name={item.icon} size={25} style={[animatedImageStyle]} />
+            {/* <Animated.Image source={item.icon} style={[animatedImageStyle,{ width:20,height:20}]} /> */}
             <Animated.View style={[styles.titleContainer, animatedTitleStyle]}>
               <Animated.Text
                 numberOfLines={1}
