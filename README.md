@@ -11,6 +11,8 @@ react-native react-native link react-native-view-overflow
 
 This is a working version with react-navigation v5 
 
+it also allows the tintColor prop
+
 It is modified to work with initalRouteName, triggering the animation when the app starts
 
 Moreover, instead of working with png, now its able to work with react-native-vector-icons.
