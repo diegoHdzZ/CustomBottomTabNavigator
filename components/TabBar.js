@@ -247,7 +247,7 @@ TabBar.propTypes = {
   values: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
-      icon: PropTypes.number.isRequired
+      icon: PropTypes.string.isRequired
     })
   ),
   tintColor: PropTypes.string

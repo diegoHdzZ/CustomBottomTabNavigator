@@ -15,16 +15,16 @@ function MyTabBar({state, descriptors, navigation, position}) {
         return navigation.navigate('Settings');
       case 2:
         return navigation.navigate('Profile');
-        case 3:
+      case 3:
         return navigation.navigate('Members');
-        case 4:
+      case 4:
         return navigation.navigate('Account');
     }
   };
   return (
     <TabBar
       onPress={handleOnPress}
-      // tintColor="red"
+      //tintColor="red"
       activeTab={state.index}
       values={[
         {title: 'News', icon: 'instagram'},
@@ -43,7 +43,6 @@ function HomeScreen() {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        
       }}>
       <Text>Home!</Text>
     </View>
@@ -69,7 +68,6 @@ function Members() {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        
       }}>
       <Text>Members!</Text>
     </View>
@@ -82,7 +80,6 @@ function Account() {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        
       }}>
       <Text>Account!</Text>
     </View>
@@ -95,13 +92,11 @@ function SettingsScreen() {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        
       }}>
       <Text>Set</Text>
     </View>
   );
 }
-
 
 export default function App() {
   return (
